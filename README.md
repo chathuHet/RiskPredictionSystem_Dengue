@@ -45,9 +45,13 @@ regions, where the risk is localised.
 
 * The dataset used for analysis is in the file mosdf.rds.
 
-* The R markdown file analysis.rmd creates a report (analysis.htmal) which contains all the output in the paper.
+* The R markdown file analysis.rmd creates a report (analysis.html) which contains all the output in the paper.
 
 * We also present this code paper_code.R file.
+
+* All the functions required for running the analysis is saved in functions.R. We call this file in both the analysis.rmd and paper_code.r by ```source(here::here("functions.R"))```.
+
+* The shapefile for Taiwan used for plotting Fig 3 is saved as GADM_2.8_TWN_adm2.rds.
 
 * We have saved the dataframe resulting from the bootstarp approach in pos_percentage.rds to save the time in running the code.
 If one wants to run the bootstrap approach, it can be done by uncommenting the relevant lines (lines 141-142 in analysis.rmd or lines 105-106 in paper_code.r).
